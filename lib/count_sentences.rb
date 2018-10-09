@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
+  sentence_array = Array.new 
   sentence_array << self.split(/["']?[A-Z][^.?!]+((?![.?!]['"]?\s["']?[A-Z][^.?!]).)+[.?!'"]+/)
     sentence_array.size
   end
